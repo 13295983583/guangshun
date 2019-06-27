@@ -1,0 +1,65 @@
+<!--pages/user/pers/index.wxml-->
+<!-- <text>pages/user/pers/index.wxml</text> -->
+<view class='title'>
+  <view class='main'>
+    <view class='icon'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <text class='tex'>姓名：{{name}}\n账号：{{phone}}</text>
+  </view>
+  <view class='animation'>
+    <view class='animation_1'></view>
+    <view class='animation_2'></view>
+  </view>
+</view>
+<view style='margin:15px'></view>
+<view class='content'>
+  <view class='item'>
+    <view class='item_n_l'>
+      <image class='l_icon' src='/static/icon/anzhuang-hui.svg'></image>
+      待安装
+    </view>
+    <view class='item_n_r'>
+      <view class='Badge'>
+        1
+      </view>
+      <image src='/static/icon/next.svg'></image>
+    </view>
+  </view>
+  <view class='item'>
+    <view class='item_n_l'>
+      <image class='l_icon' src='/static/icon/weixiuguanli.svg'></image>
+      待维修
+    </view>
+    <view class='item_n_r'>
+      <view class='Badge'>
+        1
+      </view>
+      <image src='/static/icon/next.svg'></image>
+    </view>
+  </view>
+  <view class='item'>
+    <view class='item_n_l'>
+      <image class='l_icon' src='/static/icon/huiyuanquerendaodian.svg'></image>
+      已安装
+    </view>
+    <view class='item_n_r'>
+      <view class='Badge'>
+        1
+      </view>
+      <image src='/static/icon/next.svg'></image>
+    </view>
+  </view>
+  <view class='item'>
+    <view class='item_n_l'>
+      <image class='l_icon' src='/static/icon/iconddsho.svg'></image>
+      已维修
+    </view>
+    <view class='item_n_r'>
+      <view class='Badge'>
+        1
+      </view>
+      <image src='/static/icon/next.svg'></image>
+    </view>
+  </view>
+</view>

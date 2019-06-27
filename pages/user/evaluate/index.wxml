@@ -1,0 +1,65 @@
+<!--pages/user/evaluate/index.wxml    评价页面-->
+<!-- <text>pages/user/evaluate/index.wxml</text> -->
+<view class='title'>
+标题
+</view>
+<van-cell-group>
+  <van-cell title="是否按照约定时间">
+    <van-radio-group value="{{ PJ_YD }}" bind:change="PJ_YD">
+      <van-row>
+        <van-col span="12">
+          <van-radio name="1">是</van-radio>
+        </van-col>
+        <van-col span="12">
+          <van-radio name="2">否</van-radio>
+        </van-col>
+      </van-row>
+    </van-radio-group>
+  </van-cell>
+
+  <van-cell title="是否有乱收费情况">
+    <van-radio-group value="{{ PJ_SF }}" bind:change="PJ_SF">
+      <van-row>
+        <van-col span="12">
+          <van-radio name="1">是</van-radio>
+        </van-col>
+        <van-col span="12">
+          <van-radio name="2">否</van-radio>
+        </van-col>
+      </van-row>
+    </van-radio-group>
+  </van-cell>
+
+  <van-cell title="服务是否满意">
+    <van-radio-group value="{{ PJ_MY }}" bind:change="PJ_MY">
+      <van-row>
+        <van-col span="8">
+          <van-radio name="1">好</van-radio>
+        </van-col>
+        <van-col span="8">
+          <van-radio name="2">中</van-radio>
+        </van-col>
+        <van-col span="8">
+          <van-radio name="3">差</van-radio>
+        </van-col>
+      </van-row>
+    </van-radio-group>
+  </van-cell>
+
+  <van-cell title="服务打分">
+    <van-rate value="{{ PJ_WX }}" bind:change="PJ_WX" />
+  </van-cell>
+
+  <van-field value="{{ PJ_BZ }}" label="备注" type="textarea" placeholder="请输入备注" autosize border="{{ false }}" />
+
+</van-cell-group>
+ <view class='item'>
+    拍照上传：
+    <view class='content'> 
+      <view class='addImg' bindtap='PaiZhao'>
+        <image src='/static/icon/add.svg'></image>
+      </view>
+    </view>
+  </view>
+<view style='padding:65rpx'/>
+<van-button type="danger"  size='large' >提交</van-button>

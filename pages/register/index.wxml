@@ -1,0 +1,27 @@
+<!--pages/register/index.wxml-->
+<view class="main">
+	<view class="top">
+    <open-data type="userAvatarUrl" style='height:150rpx;width:150rpx'></open-data>
+		<view class="tex">
+			<text>微信授权成功！</text>
+      <text>\n</text>
+			<text>简单设置即可使用</text>
+		</view>
+	</view>
+
+	<view class="iptw">
+		<input class="ipt" id="mobile" cursor='20' value='{{phone}}' placeholder="请先输入手机号码" placeholder-style="font-size:14px" bindinput="setPhone"/>
+	</view>
+	<view class="iptw">
+			<input  placeholder="请输入短信验证码" placeholder-style="font-size:14px" bindinput="setCode"></input>
+      <view class="teshuBtn" wx:if="{{countNum > 0}}">{{countNum}}s</view>
+			<view class="teshuBtn" bindtap='codeBtn' wx:else>获取验证码</view>
+	</view>
+	<!--<view class="iptw">-->
+		<!--<input type="password" id="password" name="password" class="ipt"  placeholder="请输入登陆密码">-->
+	<!--</view>-->
+	<!--<view class="iptw">-->
+		<!--<input type="password" id="repassword" name="repassword" class="ipt"  placeholder="请再次输入登录密码">-->
+	<!--</view>-->
+	<view class="btn2" id="button" bindtap='saveBtn'>保存</view>
+</view>

@@ -1,0 +1,54 @@
+/* pages/installOrder/index.wxss */
+
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #d0d0d0;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 20%;
+  color: #272727;
+}
+
+.on {
+  color: #f55;
+  border-bottom: 5rpx solid #f55;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #f3f3f3;
+}
+
+page {
+  background: #fff;
+}
+
+.listItem {
+  width: 100%;
+  min-height: 200rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+
+.LI_tit {
+  height: 50rpx;
+  color: #999;
+  font-size: 25rpx;
+  line-height: 50rpx;
+  display: flex;
+  justify-content: space-between;
+  padding:  20rpx;
+  border-bottom: 1rpx solid #f4f4f4;
+}
+.LI_main{
+    padding:  20rpx;
+    font-size: 30rpx;
+}

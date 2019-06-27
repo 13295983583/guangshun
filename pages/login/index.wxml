@@ -1,0 +1,12 @@
+<!--pages/login/index.wxml-->
+<view class="main">
+  <view style='padding:10px'/>
+  <image src='../../static/images/logo.jpg' class='logo'></image>
+  <view class="iptw">
+    <input class="ipt" id="mobile" value='{{user}}' placeholder="请输入账号" placeholder-style="font-size:14px" bindinput="setUser" />
+  </view>
+  <view class="iptw">
+    <input class="ipt" id="mobile" value='{{password}}' placeholder="请输入密码" placeholder-style="font-size:14px" bindinput="setPassword"  password ='true'/>
+  </view>
+  <view class="btn2" id="button" bindtap='loginBtn'>登 录</view>
+</view>

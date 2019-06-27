@@ -1,0 +1,38 @@
+<!--pages/installOrder/index.wxml  安装订单-->
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">待预约</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">待分配</view>
+  <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">待安装</view>
+  <view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="swichNav">已安装</view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+  <swiper-item>
+    <block wx:for="{{listdata}}" wx:for-item="item" wx:key='index'>
+      <view class='listItem'>
+        <view class='LI_tit'>
+          <text>预约安装时间：{{item.time}}</text>
+          <text>待分配 ></text>
+        </view>
+        <view class='LI_main'>
+          <view>客户姓名：{{item.name}}</view>
+          <view>联系电话：{{item.phone}}</view>
+          <view>详细地址：{{item.addr}}</view>
+        </view>
+      </view>
+    </block>
+  </swiper-item>
+  <!-- 我是呵呵 -->
+  <swiper-item>
+    <view>待预约</view>
+  </swiper-item>
+  <swiper-item>
+    <view>待分配</view>
+  </swiper-item>
+  <swiper-item>
+    <view>待安装</view>
+  </swiper-item>
+  <swiper-item>
+    <view>已安装</view>
+  </swiper-item>
+</swiper>

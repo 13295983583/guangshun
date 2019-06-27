@@ -1,0 +1,101 @@
+<!--pages/user/particulars/index.wxml-->
+<view class='hand'>
+  <view>待分配</view>
+  <view>预约安装</view>
+</view>
+<view>
+  <view class='item'>
+    <image src='/static/icon/location.svg'></image>
+  </view>
+  <view class='item' style=' padding: 0rpx 30rpx'>
+    <view class='item_n'>
+      产品类型:A礼盒
+    </view>
+    <view class='item_n'>
+      姓名:kkk
+    </view>
+    <view class='item_n'>
+      电话:13655555555
+    </view>
+    <view class='item_n'>
+      详细地址:洛阳市洛龙区
+    </view>
+    <view class='item_n'>
+      预约维修时间:2019年6月26日15:37:32
+    </view>
+  </view>
+  <view class='item'>
+    <image src='/static/icon/iconfont icon-shebei.svg'></image>
+    备注:
+  </view>
+  <view class='item'>
+    <image src='/static/icon/iconfont icon-shebei.svg'></image>
+    故障说明：
+  </view>
+  <view class='item'>
+    下单时间：2019年6月26日15:48:16
+  </view>
+
+  <view class='item'>
+    <image src='/static/icon/iconfont icon-shebei.svg'></image>
+    上传凭证：
+    <view class='content'>
+      <view class='addImg' bindtap='paiZhao'>
+        <image src='/static/icon/add.svg'></image>
+      </view>
+      <view class='textareaBox'>
+        <textarea placeholder='请填写备注信息'></textarea>
+      </view>
+    </view>
+  </view>
+
+  <view class='item'>
+    <image src='/static/icon/iconfont icon-shebei.svg'></image>
+    安装报告：
+  </view>
+  <view class='item'>
+    <image src='/static/icon/iconfont icon-shebei.svg'></image>
+    服务评价
+    <view style='padding:15rpx;'></view>
+    <van-row gutter='10'>
+      <van-col span="8">按照预约时间：</van-col>
+      <van-col span="16">
+        是
+      </van-col>
+    </van-row>
+    <view style='padding:8rpx;' />
+    <van-row gutter='10'>
+      <van-col span="8">服务是否满意：</van-col>
+      <van-col span="16">
+        是
+      </van-col>
+    </van-row>
+    <view style='padding:8rpx;' />
+    <van-row gutter='10'>
+      <van-col span="8">乱收费情况：</van-col>
+      <van-col span="16">
+        无
+      </van-col>
+    </van-row>
+    <view style='padding:8rpx;' />
+    <van-row gutter='10'>
+      <van-col span="8">五星评价：</van-col>
+      <van-col span="16">
+        <van-rate value="{{ value }}" />
+      </van-col>
+    </van-row>
+    <view style='padding:8rpx;' />
+    <van-row gutter='10'>
+      <van-col span="8">拍照上传：</van-col>
+      <van-col span="16">
+      </van-col>
+    </van-row>
+    <view style='padding:8rpx;' />
+    <van-row gutter='10'>
+      <van-col span="8">备注：</van-col>
+      <van-col span="16">
+        暂无
+      </van-col>
+    </van-row>
+  </view>
+</view>
